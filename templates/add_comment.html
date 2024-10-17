@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    <div class="m-block">
+        <h1 class="mt-5">{%block title%}Напишіть відгук{%endblock%}</h1>
+        <form action="/add_comment" method="post" onsubmit="return confirmSubmission()">
+            <div class="m-3">
+                <label for="name" class="form-label">Ведіть ваше ім'я та прізвище</label>
+                <input name="name" class="form-control" placeholder="Іван Іванов" required>
+            </div>
+            <div class="m-3">
+                <label for="brand_" class="form-label">Ведіть марку вашого авто та модель</label>
+                <input name="brand_" class="form-control" placeholder="BMW e39 2000" required>
+            </div>
+            <div class="m-3">
+                <label for="comment" class="form-label">Ведіть коментарій</label>
+                <input name="comment" class="form-control" required>
+            </div>
+            <div class="m-3">
+                <label for="good" class="form-label">Що сподобалося</label>
+                <textarea name="good" class="form-control" required></textarea>
+            </div>
+            <div class="m-3">
+                <label for="bad" class="form-label">Що не сподобалося</label>
+                <input name="bad" class="form-control" required>
+            </div>
+            <div class="form-group m-3">
+                <label for="rating" class="form-label">Оцінка</label>
+                <select name="rating" class="form-control" required>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
+            </div>
+            <button class="btn btn-success m-3" type="submit">Написати відгук</button>
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+        function confirmSubmission() {
+            return confirm("Ви впевнені, що хочете написати відгук?");
+        }
+    </script>
+{% endblock %}

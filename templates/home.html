@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<div class="m-block">
+
+
+<div class="row ">
+<div class="col-md-6 col-12">
+        <div class="mt-5 ">
+            <video controls>
+                <source src="{{ url_for('video', filename='video.mp4') }}" type="video/mp4">
+            </video>
+            <h5 class="text-center">Як проїхати до нашого автосервісу</h5>
+        </div>
+
+     </div>
+
+<div class="col-md-6 col-12">
+    <div class=" mt-5 home-text">
+        <div>
+            <h1 class="text-center">{%block title%}СТО Car service{%endblock%}</h1>
+            <h3 class="text-center">Ремонт, який вартий довіри</h3>
+        </div>
+        <div class="fs-5 text-center">Ласкаво просимо до СТО “АвтоМайстер”! Ми пропонуємо професійні послуги з ремонту та обслуговування автомобілів будь-яких марок. Наші досвідчені механіки використовують найсучасніше обладнання для швидкої та якісної діагностики та ремонту. У нас ви можете отримати послуги з заміни масла, ремонту двигуна, трансмісії, підвіски, гальмівної системи та багато іншого.</div>
+    </div>
+</div>
+
+</div>
+
+    <h2 class="text-center">Наша фотокартка</h2>
+<div class="row">
+    <div class="col-md-3 col-6">
+        <img class="mt-3" width="100%" src="/static/images_home/img-1.avif">
+    </div>
+    <div class="col-md-3 col-6">
+        <img class="mt-3" width="100%" src="/static/images_home/img-2.avif">
+    </div>
+    <div class="col-md-3 col-6">
+        <img class="mt-3" width="100%" src="/static/images_home/img-3.avif">
+    </div>
+    <div class="col-md-3 col-6">
+        <img class="mt-3" width="100%" src="/static/images_home/img-4.avif">
+    </div>
+    <div class="col-md-3 col-6">
+        <img class="mt-3" width="100%" src="/static/images_home/img-5.avif">
+    </div>
+    <div class="col-md-3 col-6">
+        <img class="mt-3" width="100%" src="/static/images_home/img-6.avif">
+    </div>
+    <div class="col-md-3 col-6">
+        <img class="mt-3" width="100%" src="/static/images_home/img-7.avif">
+    </div>
+    <div class="col-md-3 col-6">
+        <img class="mt-3" width="100%" src="/static/images_home/img-8.avif">
+    </div>
+
+</div>
+
+
+</div>
+{% endblock %}
+

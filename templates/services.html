@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{%block title%}Послуги{%endblock%}
+
+{% block content %}
+<div class="m-block">
+
+
+<div class="row ">
+
+    <div class="col-md-4 col-12">
+        <div type="submit" onclick="window.location.href='{{url_for('serv_suspension')}}'" class="card mt-3" style="width: 100%; height: 550px;">
+            <img class="mt-4" height="50%" src="/static/images_services/img-suspension.jpg">
+            <div class="card-body">
+                <h3 class="card-title text-center">Діагностика та ремонт ходової частини</h3>
+                <p class="card-text text-center">Наша СТО пропонує професійну діагностику та ремонт ходової частини автомобіля. Ми проводимо комплексну перевірку всіх елементів підвіски, включаючи амортизатори, пружини, важелі, сайлентблоки та підшипники.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12">
+        <div type="submit" onclick="window.location.href='{{url_for('serv_brakes')}}'" class="card mt-3" style="width: 100%; height: 550px;">
+            <img class="mt-4" height="50%" src="/static/images_services/img-brakes.jpg">
+            <div class="card-body">
+                <h3 class="card-title text-center">Огляд та ремонт гальмівної частини</h3>
+                <p class="card-text text-center">Огляд та ремонт гальмівної системи включає перевірку колодок і дисків, рівня гальмівної рідини, заміну зношених деталей, прокачування системи для видалення повітря та регулювання гальмівних механізмів. Регулярне обслуговування забезпечує безпеку та ефективність гальмування.</p>
+            </div>
+        </div>
+    </div>
+
+     <div class="col-md-4 col-12">
+        <div type="submit" onclick="window.location.href='{{url_for('serv_TO')}}'" class="card mt-3" style="width: 100%; height: 550px;">
+            <img class="mt-4" height="50%" src="/static/images_services/img-TO.jpg">
+            <div class="card-body">
+                <h3 class="card-title text-center">Планове ТО</h3>
+                <p class="card-text text-center">Комплекс заходів, спрямованих на підтримку автомобіля в оптимальному технічному стані. Наші фахівці проводять ретельну діагностику та обслуговування всіх основних систем автомобіля.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12">
+        <div type="submit" onclick="window.location.href='{{url_for('serv_spare_parts')}}'" class="card mt-3" style="width: 100%; height: 550px;">
+            <img class="mt-4" height="50%" src="/static/images_services/img-spare_parts.jpg">
+            <div class="card-body">
+                <h3 class="card-title text-center">Продаж запчастин</h3>
+                <p class="card-text text-center">Наш сервіс пропонує широкий асортимент високоякісних автозапчастин для всіх марок і моделей автомобілів. Ми співпрацюємо з провідними виробниками, щоб забезпечити вас надійними деталями.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12">
+        <div type="submit" onclick="window.location.href='{{url_for('serv_computer_diagnostics')}}'" class="card mt-3" style="width: 100%; height: 550px;">
+            <img class="mt-4" height="50%" src="/static/images_services/img-computer_diagnostics.jpg">
+            <div class="card-body">
+                <h3 class="card-title text-center">Комп'ютерна діагностика</h3>
+                <p class="card-text text-center">Наш сервіс пропонує професійну комп’ютерну діагностику автомобіля, що дозволяє швидко та точно виявити будь-які несправності. Ми використовуємо сучасне обладнання для перевірки всіх систем вашого авто, включаючи двигун, електроніку, паливну систему та інші важливі компоненти.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12">
+        <div type="submit" onclick="window.location.href='{{url_for('serv_checking_before_buying')}}'" class="card mt-3" style="width: 100%; height: 550px;">
+            <img class="mt-4" height="50%" src="/static/images_services/img-checking_before_buying.jpg">
+            <div class="card-body">
+                <h3 class="card-title text-center">Діагностика авто перед купівлею</h3>
+                <p class="card-text text-center">Наша послуга купівлі авто перед купівлею допоможе вам зробити правильний вибір при придбанні автомобіля. Ми пропонуємо комплексний огляд авто, тест-драйв, консультації експертів та юридичну перевірку документів.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+
+</div>
+{% endblock %}

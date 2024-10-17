@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="m-block">
+    <h1 class="mt-5">{% block title %}Замовити запчастини{%endblock%}</h1>
+    <form action="/submit_parts" method="post">
+        <div class="m-3 ">
+            <label for="name" class="form-label">Ведіть ваше ім'я та прізвище</label>
+            <input name="name" class="form-control" placeholder="Іван Іванов" required>
+        </div>
+        <div class="m-3">
+            <label for="brand" class="form-label">Ведіть марку вашого авто</label>
+            <input name="brand" class="form-control" placeholder="BMW" required>
+        </div>
+        <div class="m-3">
+            <label for="year" class="form-label">Ведіть модель та рік вашого авто</label>
+            <input name="year" class="form-control" placeholder="e39 2000" required>
+        </div>
+        <div class="m-3">
+            <label for="vin" class="form-label">Ведіть VIN-код авто</label>
+            <input name="vin" class="form-control" placeholder="W09xxxxxxxxYYYxxx" required>
+        </div>
+        <div class="m-3">
+            <label for="parts" class="form-label">Напишіть перелік запчастин які вам необхідні:</label>
+            <textarea name="parts" class="form-control" rows="3" required></textarea>
+        </div>
+        <div class="m-3">
+            <label for="phone" class="form-label">Ведіть номер телефону з Вайбером або щоб ми змогли вам зателефонувати</label>
+            <input name="phone" class="form-control" placeholder="+380 ** *** ** **" required>
+        </div>
+        <div class="m-3">
+            <label for="telegram" class="form-label">Ведіть телеграм якщо він вам зручніше</label>
+            <input name="telegram" class="form-control" placeholder="@******">
+        </div>
+        <div class="m-3">
+            <label for="call_back" class="form-label">Зателефонувати вам?</label>
+            <select name="call_back" class="form-select" >
+                <option value="Так">Так</option>
+                <option value="Ні">Ні</option>
+            </select>
+        </div>
+        <button class="btn btn-success m-3" type="submit">Замовити</button>
+    </form>
+
+</div>
+
+
+{% endblock %}
